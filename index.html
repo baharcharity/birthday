@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Fundraiser 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff5f8;
+      color: #444;
+      text-align: center;
+    }
+
+    .headline {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 20px 0 10px;
+      color: #e75480;
+    }
+
+    p.description {
+      font-size: 1.2em;
+      margin: 0 20px 30px;
+      color: #555;
+    }
+
+    .form-container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto 60px;
+      padding-top: 120px;
+    }
+
+    .overlay-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 200px;
+      z-index: 2;
+    }
+
+    iframe.form-iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      z-index: 1;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Birthday Header -->
+  <img src="blind.jpg" alt="Happy Birthday Banner" class="headline" />
+
+  <!-- Title and Description -->
+  <h1>🎉 Celebrate My Birthday With a Gift That Gives Back!</h1>
+  <p class="description">
+    Instead of gifts, I'm raising funds for a cause close to my heart.
+    Please fill out the form below to contribute. Every bit counts!
+  </p>
+
+  <!-- Form with overlay image (like balloons/cake) -->
+  <div class="form-container">
+    <img src="blind.jpg" alt="Balloons or Cake" class="overlay-image" />
+    <iframe class="form-iframe" src="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevWk8bhTcL-UmbEhDK5-M5Vs7t7HtijyZIEtH5TUF4v-ABQQ/viewform?embedded=true" width="640" height="1281" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>
