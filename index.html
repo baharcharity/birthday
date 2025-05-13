@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Birthday Fundraiser</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Fundraiser 🎂</title>
   <style>
-    .progress-container {
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffafc;
+      color: #333;
+      text-align: center;
+    }
+
+    img.header {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+     .progress-container {
       width: 100%;
       background-color: #ddd;
       border-radius: 25px;
@@ -17,10 +34,35 @@
       color: white;
       line-height: 30px;
     }
+
+    .description {
+      font-size: 1.2em;
+      margin: 10px 20px 30px;
+      color: #444;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto 60px;
+      padding: 0 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Headline / Banner -->
+  <img src="headline.jpg" alt="Happy Birthday!" class="header" />
+
+  <!-- Progress Bar Image -->
 <h2>Help me reach my goal of $1000!</h2>
 <div class="progress-container">
   <div class="progress-bar" id="progressBar">0%</div>
@@ -47,6 +89,18 @@
   // Optionally refresh every 30 seconds
   setInterval(fetchTotal, 30000);
 </script>
+
+  
+  <!-- Optional short description -->
+  <p class="description">
+    Thank you for celebrating my birthday with me! Your support means the world. 💖<br/>
+    Please use the form below to contribute to the fundraiser.
+  </p>
+
+  <!-- Google Form -->
+  <div class="form-container">
+    <iframe src="YOUR_GOOGLE_FORM_EMBED_LINK" allowfullscreen></iframe>
+  </div>
 
 </body>
 </html>
